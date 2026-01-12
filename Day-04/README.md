@@ -1,4 +1,4 @@
-Day 04 – Delta Lake Introduction
+# Day 04 – Delta Lake Introduction
 On Day 4 of the Databricks 14-Day AI Challenge, I learned how modern data platforms store data in a safe, reliable, and structured way using Delta Lake.
 Delta Lake is what makes Databricks suitable for real businesses — not just for reading data, but for managing data that keeps changing.
 ## What I worked on
