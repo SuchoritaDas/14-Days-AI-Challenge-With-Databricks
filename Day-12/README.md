@@ -1,28 +1,35 @@
-# Day 11: Statistical Analysis & ML Preparation
-This folder contains my work for Day 11 of the Databricks 14 Days AI Challenge, focused on building strong statistical foundations and preparing data for machine learning.
-## What this day is about
-Before training any ML model, it’s important to understand the data deeply. This day focuses on statistics, hypothesis thinking, and feature engineering using Spark.
-## What I implemented
-1. Descriptive Statistics
-I explored basic statistical summaries (count, mean, min, max) to understand how numerical variables behave.
-2. Weekday vs Weekend Analysis
-I created a derived column to identify weekends and compared event behavior between weekdays and weekends to see if user activity patterns change.
-3. Correlation Analysis
-Checked correlations between important variables like price and conversion-related metrics to understand relationships in the data.
-4. Feature Engineering for ML
-Created new features that are commonly used in machine learning:
-Hour of the event
-Day of the week
-Log-transformed price
-Time since first interaction (user-level time feature)
-These features help models capture time-based behavior and scale numerical values properly.
-## Tools & Concepts Used
-Apache Spark (PySpark)
-Databricks notebooks
-Descriptive statistics
-Correlation analysis
-Feature engineering
-Window functions
-## Why this matters
-This day bridges analytics and machine learning.
-Good features and statistical understanding directly improve model performance and explainability.
+# Phase 4: AI & Machine Learning (Days 12–14)
+On Day 12 of the Databricks 14 Days AI Challenge, I focused on understanding how MLflow is used to track, manage, and compare machine learning experiments in a real analytics environment.
+This day connects analytics data with machine learning workflows and shows how models are handled beyond just training.
+## 🔍 What I Learned
+MLflow is an open-source platform that helps track experiments, store models, and compare results.
+Key concepts covered today:
+MLflow components (experiments, runs, metrics, models)
+Experiment tracking
+Logging parameters and metrics
+Viewing and comparing runs using the MLflow UI
+## 🛠 What I Implemented
+For hands-on practice, I built a simple regression model using data from the Gold layer.
+-- Steps followed:
+Loaded curated analytics data from Databricks tables
+Prepared features and target variables
+Split data into training and test sets
+Trained a Linear Regression model
+Logged model details using MLflow
+📊 MLflow Tracking Details
+During model training, I logged:
+Model type (Linear Regression)
+Train–test split size
+Model performance using R² score
+The trained model artifact
+All runs were tracked automatically and visualized inside the MLflow UI, making it easy to compare different experiments.
+## 📈 Why This Matters
+This workflow is important because:
+Experiments become reproducible
+Model performance is clearly tracked
+Teams can compare models easily
+Models can move smoothly from experimentation to production
+It bridges the gap between data engineering and machine learning.
+## 🧠 Key Takeaway
+Day 12 helped me understand that building a model is only part of the job.
+Tracking, comparing, and managing experiments is what makes machine learning reliable and scalable in real companies.
